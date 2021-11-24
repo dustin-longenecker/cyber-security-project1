@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 **Note**: The following image link needs to be updated. Replace `diagram_filename.png` with the name of your diagram image file.  
 
 ![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
-![Network Diagram](Images/network-diagram.png)
+![Network Diagram](Images/NetworkProject.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **YAML** file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -98,6 +98,7 @@ The following screenshot displays the result of running `docker ps` after succes
 **Note**: The following image link needs to be updated. Replace `docker_ps_output.png` with the name of your screenshot image file.  
 
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+`sudo docker ps`
 `sudo docker container list -a`
 
 ### Target Machines & Beats
@@ -135,7 +136,7 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - Update the `hosts` file to include `10.4.0.1 ansible_python_interpreter=/usr/bin/python3` specfic to the ELK machine.
 - _Which URL do you navigate to in order to check that the ELK server is running?
-- Run the playbook, and navigate to http://ELKStackPublicIP:5601/app/kibana to check that the installation worked as expected.
+- Run the playbook, and navigate to `http://ELKStackPublicIP:5601/app/kibana` to check that the installation worked as expected.
 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
